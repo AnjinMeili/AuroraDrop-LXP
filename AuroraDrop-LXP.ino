@@ -26,7 +26,7 @@
 #define PANEL_HEIGHT 64               
 #define PANELS_NUMBER 2
 
-int GLOBAL_BRIGHTNESS = 64;    //0-255 - this gets overridden with the ADC value if BRIGHT_PIN is defined - otherwise it stays here.
+int GLOBAL_BRIGHTNESS = 255;    //0-255 - this gets overridden with the ADC value if BRIGHT_PIN is defined - otherwise it stays here.
 
 #include <ESP32-HUB75-MatrixPanel-I2S-DMA.h>
 
@@ -60,11 +60,11 @@ int GLOBAL_BRIGHTNESS = 64;    //0-255 - this gets overridden with the ADC value
     #define I2S_SCK 7
     #define I2S_SD  8
 
-    // ESP32-S3 Devkit C/M have these
+    // ESP32-S3 Devkit C/M have these, optional - but if you have one, define it.
     //
     #define ONBOARD_RGB_LED_PIN 48
 
-    // Brightness ADC pin
+    // Brightness ADC pin, optional
     //
     #define BRIGHT_PIN 1
 
@@ -105,15 +105,15 @@ int GLOBAL_BRIGHTNESS = 64;    //0-255 - this gets overridden with the ADC value
 
     // INMP441 Pins
     //
-    #define I2S_WS  19
-    #define I2S_SCK 20
-    #define I2S_SD  21
+    #define I2S_WS  20
+    #define I2S_SCK 19
+    #define I2S_SD  14
 
     // ESP32-S3 Devkit C/M have these
     //
-    #define ONBOARD_RGB_LED_PIN 48
+    // #define ONBOARD_RGB_LED_PIN 48
 
-    // Brightness ADC pin
+    // Brightness ADC pin, optional
     //
     // #define BRIGHT_PIN 1
 
@@ -237,7 +237,7 @@ void setup() {
      #ifdef BRIGHT_PIN
 
         // set on startup so we don't blow up someone's eyeballs 
-        
+
         analogReadResolution(8);
 
         GLOBAL_BRIGHTNESS = analogRead(BRIGHT_PIN);
