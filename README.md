@@ -29,11 +29,11 @@ The recommended ESP32 target for the project is specificially the ESP32-S3-DevKi
 
 https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/hw-reference/esp32s3/user-guide-devkitm-1.html
 
-The board was selected because the HUB75 driver has optimizations for the ESP32-S3 which makes it faster, and the ESP32-S3-DevKitM1 (**not** DevKitC1) board has a VERY advantageous pin arrangement that can be used to directly attach to the HUB75 connector (with some pin header bending!). It doesn't have PSRAM, but that doesn't seem to be as needed at the moment.
+The board was selected because the ESP32-HUB75-MatrixPanel-I2S-DMA driver has optimizations for the ESP32-S3 which makes it faster, and the ESP32-S3-DevKitM1 (**not** DevKitC1) board has a VERY advantageous pin arrangement that can be used to directly attach to the HUB75 connector (with some pin header bending!). It doesn't have PSRAM, but that doesn't seem to be as needed at the moment.
 
-Larger matrix widths (over 128 wide) have been tested with a non-Espressif 3rd-party ESP32-S3-DevKitC1 "type" board - the pinout is better than the Espressif devkit-C1 so we can get 16 pins in an even 2x8 continuous spacing. 
+Larger matrix widths (over 128 wide) have been tested with a non-Espressif 3rd-party ESP32-S3-DevKitC1 "style" board - the pinout is better than the Espressif devkit-C1 so we can get 16 pins in an even 2x8 continuous spacing. 
 
-At the moment I'm not sure if the PSRAM is helping large widths - or it's other fixes I've done. Either way, the PSRAM is indeed in use in the HUB75 panel driver if you enable it and your board supports it. There may be other benefits of the S3 with the HUB75 driver as well.
+At the moment I'm not sure if the PSRAM is helping large widths - or it's other fixes I've done. Either way, the PSRAM is indeed in use in the HUB75 panel driver if you enable it and your board supports it. There may be other benefits of the S3 with the ESP32-HUB75-MatrixPanel-I2S-DMA driver as well.
 
 ### Audio Input - INMP441 I2S ###
 
