@@ -25,11 +25,16 @@ This code has been tested with up to **FOUR** 64x64 pixel HUB74 "E" panels in a 
 
 At 256 pixels wide the framereate does sometimes suffer - but if you play with the playlist sizes and pick effects that are very fast, 30fps is attainable on 64x256 (four panels) - which is 16,384 LEDs!
 
+https://github.com/troyhacks/AuroraDrop-LXP/assets/5659019/f0cb493c-4cda-40f6-9f7b-c2d43bed065f
+
 The recommended ESP32 target for the project is specificially the ESP32-S3-DevKitM-1 board. 
 
 https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/hw-reference/esp32s3/user-guide-devkitm-1.html
 
 The board was selected because the ESP32-HUB75-MatrixPanel-I2S-DMA driver has optimizations for the ESP32-S3 which makes it faster, and the ESP32-S3-DevKitM1 (**not** DevKitC1) board has a VERY advantageous pin arrangement that can be used to directly attach to the HUB75 connector (with some pin header bending!). It doesn't have PSRAM, but that doesn't seem to be as needed at the moment.
+
+![PXL_20221225_043408744](https://github.com/troyhacks/AuroraDrop-LXP/assets/5659019/b894bb94-9306-434d-bc72-538268e156f5)
+![PXL_20221225_193802738](https://github.com/troyhacks/AuroraDrop-LXP/assets/5659019/cddafedc-ccac-4330-9418-3c34ac7693e4)
 
 Larger matrix widths (over 128 wide) have been tested with a non-Espressif 3rd-party ESP32-S3-DevKitC1 "style" board - the pinout is better than the Espressif devkit-C1 so we can get 16 pins in an even 2x8 continuous spacing. 
 
