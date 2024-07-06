@@ -1,14 +1,10 @@
-# AuroraDrop LXP v1.0.1
-
-## updated by Anjin
-
-Updated for the new ArduinoFFT library (2.02).  
-Requires downgrading Esp32 board package to 2.0.17.
-Tested with Arduino IDE 2.3.2
+# AuroraDrop LXP v1.0.0
 
 RGB Matrix Audio Visualiser for ESP32
 
 Forked from AuroraDrop by uklooney, based on the FastLED Auroa Demo by Jason Coon, and using the ESP32-HUB75-MatrixPanel-I2S-DMA library by mrfaptastic. Audio reactive and I2S code from the WLED usermod "AudioReactive" - and some love from MoonModules WLED fork as well. 
+
+Reforked from troyhacks/AuroraDrop-LXP to update ArduinoFFT to 2.02 & fix the include paths for Linux/OSX, Requires Esp32 board package 2.0.17.
 
 ## Introduction
 

@@ -5,13 +5,13 @@
 
 //#include "Vector.h"
 
-#include "PatternsEffects\PatternEffect_A_TestBlur2d.h"
-#include "PatternsEffects\PatternEffect_B_SpiralStream1.h"
-#include "PatternsEffects\PatternEffect_C_Stream1.h"
-#include "PatternsEffects\PatternEffect_D_Move.h"
-#include "PatternsEffects\PatternEffect_XX_NOOP.h"
-#include "PatternsEffects\PatternEffect_X_Munch.h"
-#include "PatternsOther\PatternEffect_T_TVStatic.h"
+#include "PatternsEffects/PatternEffect_A_TestBlur2d.h"
+#include "PatternsEffects/PatternEffect_B_SpiralStream1.h"
+#include "PatternsEffects/PatternEffect_C_Stream1.h"
+#include "PatternsEffects/PatternEffect_D_Move.h"
+#include "PatternsEffects/PatternEffect_XX_NOOP.h"
+#include "PatternsEffects/PatternEffect_X_Munch.h"
+#include "PatternsOther/PatternEffect_T_TVStatic.h"
 
 class Playlist_Foreground : public Playlist {
 

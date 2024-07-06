@@ -3,27 +3,27 @@
 
 // these are work in progress
 //
-#include "PatternsStatic\PatternStatic_A_Worms.h"
-#include "PatternsStatic\PatternStatic_M_SpiralLines.h"
-#include "PatternsStatic\PatternStatic_M_Flock.h"
-#include "PatternsStatic\PatternStatic_M_FlowField.h"
-#include "PatternsStatic\PatternStatic_M_Attract.h"
-#include "PatternsStatic\PatternStatic_M_Bounce.h"
-#include "PatternsStatic\PatternStatic_X_Atom.h"
-#include "PatternsStatic\PatternStatic_X_SimpleStars.h"
-#include "PatternsStatic\PatternStatic_X_Swirl.h"
+#include "PatternsStatic/PatternStatic_A_Worms.h"
+#include "PatternsStatic/PatternStatic_M_SpiralLines.h"
+#include "PatternsStatic/PatternStatic_M_Flock.h"
+#include "PatternsStatic/PatternStatic_M_FlowField.h"
+#include "PatternsStatic/PatternStatic_M_Attract.h"
+#include "PatternsStatic/PatternStatic_M_Bounce.h"
+#include "PatternsStatic/PatternStatic_X_Atom.h"
+#include "PatternsStatic/PatternStatic_X_SimpleStars.h"
+#include "PatternsStatic/PatternStatic_X_Swirl.h"
 
 // theses are all just proof of concept from aurora demo
 //
-#include "PatternsOther\PatternTest.h"
-#include "PatternsOther\PatternXIncrementalDrift.h"
-#include "PatternsOther\PatternXSpiro.h"
-#include "PatternsOther\PatternXSpin.h"
-#include "PatternsOther\PatternXRadar.h"
-#include "PatternsOther\PatternXWave.h"
-#include "PatternsStatic\PatternStatic_X_SpiralingCurves.h"
-// #include "PatternsStatic\PatternStatic_OLD_LianLiSL120.h"
-#include "PatternsEffects\PatternEffect_XX_NOOP.h"
+#include "PatternsOther/PatternTest.h"
+#include "PatternsOther/PatternXIncrementalDrift.h"
+#include "PatternsOther/PatternXSpiro.h"
+#include "PatternsOther/PatternXSpin.h"
+#include "PatternsOther/PatternXRadar.h"
+#include "PatternsOther/PatternXWave.h"
+#include "PatternsStatic/PatternStatic_X_SpiralingCurves.h"
+// #include "PatternsStatic/PatternStatic_OLD_LianLiSL120.h"
+#include "PatternsEffects/PatternEffect_XX_NOOP.h"
 
 class Platlist_Static : public Playlist {
   private:

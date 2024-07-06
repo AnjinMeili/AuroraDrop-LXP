@@ -3,12 +3,12 @@
 
 #define ARRAY_SIZE(A) (sizeof(A) / sizeof((A)[0]))
 
-#include "PatternsEffects\PatternEffect_X_ElectricMandala.h"
-#include "PatternsEffects\PatternEffect_XX_Plasma.h"
-#include "PatternsEffects\PatternEffect_X_DimAll.h"
-#include "PatternsEffects\PatternEffect_X2_Life.h"
-#include "PatternsEffects\PatternEffect_XX_NOOP.h"
-#include "PatternsEffects\PatternEffect_XX_SimplexNoise.h"
+#include "PatternsEffects/PatternEffect_X_ElectricMandala.h"
+#include "PatternsEffects/PatternEffect_XX_Plasma.h"
+#include "PatternsEffects/PatternEffect_X_DimAll.h"
+#include "PatternsEffects/PatternEffect_X2_Life.h"
+#include "PatternsEffects/PatternEffect_XX_NOOP.h"
+#include "PatternsEffects/PatternEffect_XX_SimplexNoise.h"
 
 class Playlist_Background : public Playlist {
 
