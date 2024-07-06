@@ -1,4 +1,10 @@
-# AuroraDrop LXP v1.0.0
+# AuroraDrop LXP v1.0.1
+
+## updated by Anjin
+
+Updated for the new ArduinoFFT library (2.02).  
+Requires downgrading Esp32 board package to 2.0.17.
+Tested with Arduino IDE 2.3.2
 
 RGB Matrix Audio Visualiser for ESP32
 
